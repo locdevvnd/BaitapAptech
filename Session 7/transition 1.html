@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition 1</title>
+    <style>
+        .group{display: flex;
+                flex-wrap: nowrap;}
+        .navbar{background-color: aqua; 
+                width: 100px; 
+                height: 100px; 
+                text-align: center;
+                margin-left: 10px;
+                transition: background-color 1.5s;
+                -webkit-transition:background-color 1.5s;}
+        .navbar:hover {background-color: green;}
+    </style>
+</head>
+<body>
+    <div class="group">
+        <div class="navbar">
+            <h2>home</h2>
+        </div>
+        <div class="navbar">
+            <h2>product</h2>
+        </div>
+        <div class="navbar">
+            <h2>about us</h2>
+        </div>
+    </div>
+</body>
+</html>

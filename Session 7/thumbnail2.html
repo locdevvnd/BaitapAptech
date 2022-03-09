@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thumbnail 2</title>
+    <style>
+        .container{display: flex;
+                    flex-wrap: nowrap;}
+        .thumbnail{margin: 20px;
+                text-align: center;
+                justify-content: space-around;
+                width: calc(25% - 42px);
+                border: 1px solid lightgray;
+                transition: transform 1.5s;
+                -webkit-transition: transform 1.5s;
+                -moz-transition: transform 1.5s;
+                -o-transition: transform 1.5s;}
+        .thumbnail img{object-fit: cover;
+                        width: 90%;
+                        margin: 5%;
+                        aspect-ratio: 4/3;
+                        filter: grayscale(70%);
+                        transition: all 1.5s; }
+        .thumbnail:hover {transform: scale(1.1);}
+        .thumbnail:hover img {
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="thumbnail">
+            <img src="images/images/b1.jpg" alt="">
+            <h3>Hà Nội</h3>
+        </div>
+        <div class="thumbnail">
+            <img src="images/images/b1.jpg" alt="">
+            <h3>Hà Nội</h3>
+        </div>
+        <div class="thumbnail">
+            <img src="images/images/b1.jpg" alt="">
+            <h3>Hà Nội</h3>
+        </div>
+        <div class="thumbnail">
+            <img src="images/images/b1.jpg" alt="">
+            <h3>Hà Nội</h3>
+        </div>
+    </div>
+</body>
+</html>
